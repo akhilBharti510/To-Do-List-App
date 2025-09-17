@@ -5,6 +5,11 @@ This app allows users to create, organize, and manage daily tasks with features 
 
 ---
 
+## 🌐 Live Demo  
+Check out the live version here 👉 [To-Do List App](https://akhilbharti510.github.io/To-Do-List-App/)
+
+---
+
 ## 🚀 Features
 - ✅ Add tasks with **priority levels** (Low / Medium / High)  
 - ✅ Set **due dates** (overdue tasks auto-highlighted in red)  
