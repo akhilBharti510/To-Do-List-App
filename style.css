@@ -1,0 +1,81 @@
+*{
+  margin:0; padding:0; box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+.container{
+  width:100%; min-height:100vh;
+  background: linear-gradient(135deg,#153677,#4e085f);
+  padding:10px;
+}
+
+.todo-app{
+  max-width:600px; margin:50px auto;
+  background:#fff; padding:40px 30px 70px;
+  border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+header h2{
+  color:#002765; display:flex; align-items:center; margin-bottom:20px;
+}
+header img{ width:30px; margin-left:10px; }
+
+.task-input{
+  display:flex; align-items:center; gap:10px; margin-bottom:15px; flex-wrap:wrap;
+}
+.task-input input, .task-input select{
+  padding:10px 15px; border-radius:25px; border:1px solid #ccc; font-size:14px;
+  transition:0.3s;
+}
+.task-input input:focus, .task-input select:focus{
+  border-color:#ff5945; outline:none;
+}
+.task-input button{
+  padding:10px 25px; border-radius:25px; background:#ff5945;
+  color:#fff; border:none; cursor:pointer; font-weight:bold;
+  transition:0.3s;
+}
+.task-input button:hover{ background:#e04d3b; }
+
+.task-filters{
+  display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;
+}
+.task-filters button{
+  padding:8px 16px; border-radius:20px; background:#edeef0; color:#333;
+  border:none; cursor:pointer; transition:0.3s;
+}
+.task-filters button.active{ background:#ff5945; color:#fff; }
+.task-filters button:hover{ opacity:0.8; }
+
+ul li{
+  list-style:none; display:flex; align-items:center;
+  justify-content:space-between; gap:10px; padding:12px 15px;
+  border-left:6px solid transparent; border-radius:10px;
+  margin-bottom:10px; background:#f7f7f7; box-shadow:0 3px 6px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+ul li.dragging{ opacity:0.5; }
+ul li.completed{ color:#555; text-decoration:line-through; }
+
+ul li:hover{ transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,0.15); }
+
+span.delete{
+  cursor:pointer; color:#555; font-size:20px;
+  transition:0.3s;
+}
+span.delete:hover{ color:#ff5945; }
+
+.priority-Low{ border-left-color:green; }
+.priority-Medium{ border-left-color:orange; }
+.priority-High{ border-left-color:red; }
+
+.overdue{ border-left-color:#ff0000 !important; background:#ffe6e6; }
+
+ul li span.due{
+  font-size:12px; color:#888;
+}
+
+@media(max-width:600px){
+  .todo-app{ padding:20px; }
+  .task-input button{ padding:10px 15px; }
+}

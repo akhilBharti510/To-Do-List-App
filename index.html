@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <main class="todo-app">
+      <header>
+        <h2>To-Do List <img src="img/icon.png" alt="todo-app icon"></h2>
+      </header>
+
+      <!-- Task input -->
+      <section class="task-input">
+        <input type="text" id="input-box" placeholder="Add your task">
+        <input type="date" id="due-date">
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button id="add-btn">Add</button>
+      </section>
+
+      <!-- Task filters -->
+      <section class="task-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button id="clear-btn">Clear All</button>
+      </section>
+
+      <!-- Task list -->
+      <ul id="list-container"></ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
