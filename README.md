@@ -40,4 +40,17 @@ Check out the live version here 👉 [To-Do List App](https://akhilbharti510.git
 
 1. **Clone this repo**
    ```bash
-   git clone [https://github.com/your-username/todo-app.git](https://github.com/akhilBharti510/To-Do-List-App)
+   git clone https://github.com/akhilBharti510/To-Do-List-App
+
+2. **Open project folder**
+   cd todo-app
+
+3. **Run locally**
+   Open index.html in your browser
+   Or use Live Server in VS Code for best experience
+
+## 🎯 Future Enhancements
+   ✏️ Inline editing of tasks
+   🌙 Dark mode toggle
+   📱 Mobile-first PWA (installable app)
+   🔔 Notifications for overdue tasks
